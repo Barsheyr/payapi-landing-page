@@ -1,0 +1,110 @@
+@import 'config';
+.pricing-header {
+    background-color: $background-color;
+    height: 20vh;
+}
+
+.pricing-header-top {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricing-section {
+    background-color: $background-color;
+    height: 130vh;
+}
+
+.pricing-head {
+    color: $san-juan-blue;
+    font-size: 3.0rem;
+    @include fontHead;
+}
+
+.left-nav {
+    position: relative;
+}
+
+.circle_part-pricing {
+    background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20%;
+    left: 37%;
+    background-position: bottom;
+}
+
+.plans_section {
+    @include flexCenter;
+    margin-top: 5%;
+}
+
+.plan-header {
+    color: $dark-pink;
+    font-size: 2.0rem;
+    @include fontHead;
+}
+
+.plan-paragraph {
+    color: $light-san-juan-blue;
+    margin-top: 5%;
+    @include fontParagraph;
+}
+
+.prices {
+    color: $mirage-blue;
+    margin-top: 5%;
+}
+
+.plans-list {
+    margin-top: 10%;
+}
+
+.dash-up {
+    background-color: $san-juan-blue;
+    display: block;
+    height: 3px;
+    content: " ";
+    width: 300px;
+    opacity: 0.1;
+    margin-bottom: 5%;
+}
+
+.dash-down {
+    margin-top: 10%;
+    background-color: $san-juan-blue;
+    display: block;
+    height: 3px;
+    content: " ";
+    width: 300px;
+    opacity: 0.1;
+}
+
+.plans-list>ul>li {
+    margin-top: 5%;
+    list-style: none;
+    color: $san-juan-blue;
+    @include fontParagraph;
+}
+
+.light-list {
+    color: $light-san-juan-blue;
+}
+
+.plan-button {
+    margin-top: 10%;
+    background-color: $background-color;
+    color: $mirage-blue;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: bolder;
+    border: 2px solid $mirage-blue;
+    cursor: pointer;
+    &:hover {
+        background-color: $mirage-blue;
+        color: white;
+    }
+}

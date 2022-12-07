@@ -1,0 +1,113 @@
+@import 'config';
+.contact-header {
+    background-color: $background-color;
+    height: 20vh;
+}
+
+.contact-header-top {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-section {
+    background-color: $background-color;
+    height: 130vh;
+}
+
+.left-nav {
+    position: relative;
+}
+
+.circle_part-contact {
+    background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20%;
+    left: 37%;
+    background-position: bottom;
+}
+
+.contact-head {
+    color: $san-juan-blue;
+    font-size: 3.5rem;
+    margin: 0 30% 0 5%;
+    @include fontHead;
+}
+
+// CONTACT AND IMAGES
+.contact-images {
+    @include flexCenter;
+    margin-top: 5%;
+}
+
+.contact-input {
+    background-color: $background-color;
+}
+
+.contact-dash {
+    margin-top: 5%;
+    background-color: $san-juan-blue;
+    display: block;
+    height: 3px;
+    content: " ";
+    width: 400px;
+    opacity: 0.1;
+}
+
+.contact-message-dash {
+    margin-top: 10%;
+    background-color: $san-juan-blue;
+    display: block;
+    height: 3px;
+    content: " ";
+    width: 400px;
+    opacity: 0.1;
+}
+
+.images-part-header {
+    @include fontHead;
+    color: $light-san-juan-blue;
+    font-size: 1.5rem;
+    margin-left: 6%;
+}
+
+.up-contact-images>img,
+.down-contact-images>img {
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.checkbox-segment {
+    margin-top: 5%;
+    @include flexCenter;
+}
+
+.checkbox-paragraph {
+    @include fontParagraph;
+    color: $light-san-juan-blue;
+    font-size: 1.0rem;
+    margin-left: 6%;
+}
+
+.btn_contact {
+    margin-top: 5%;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 2px solid $light-san-juan-blue;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    color: $mirage-blue;
+    font-size: 0.9rem;
+    background-color: $background-color;
+    @include fontHead;
+    &:hover {
+        background-color: $mirage-blue;
+        color: white;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,316 @@
+@import 'config';
+header {
+    background-color: $background-color;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1%;
+}
+
+.header-body {
+    @include flexCenter;
+}
+
+.right-nav {
+    @include flexCenter;
+}
+
+.shedule-demo-btn_nav {
+    background-color: $dark-pink;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    @include fontHead;
+    &:hover {
+        background-color: $charm-pink-active;
+    }
+}
+
+.shedule-demo-btn_hb {
+    background-color: $dark-pink;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: -5%;
+    @include fontHead;
+    &:hover {
+        background-color: $charm-pink-active;
+    }
+}
+
+.circle_part {
+    background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+    height: 150vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -30%;
+    left: 55%;
+}
+
+h1 {
+    color: $san-juan-blue;
+    font-size: 4.0rem;
+    padding: 0 30% 0 0;
+    margin-top: -15%;
+    @include fontHead;
+}
+
+.form-control {
+    margin-top: 5%;
+}
+
+input {
+    padding: 15px 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+.paragraph_header {
+    margin-top: 5%;
+    color: $light-san-juan-blue;
+    @include fontHead;
+}
+
+span {
+    color: $san-juan-blue;
+    font-weight: bolder;
+}
+
+// HOW WE WORK WITH SECTION 
+.hwww-part {
+    background-color: $mirage-blue;
+    height: 60vh;
+}
+
+.hwww-circle-part {
+    background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+    height: 50vh;
+    width: 80%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100%;
+    left: -25%;
+    background-position: bottom;
+}
+
+.how_we_work_with-part {
+    @include flexCenter;
+}
+
+.first-part {
+    width: 40%;
+    margin-top: 4%;
+}
+
+h2 {
+    color: white;
+    font-size: 2.5rem;
+    @include fontHead;
+}
+
+.how-we-work-with_para {
+    color: white;
+    margin-top: 2%;
+    line-height: 25px;
+    @include fontParagraph;
+}
+
+.how-we-work-with-button {
+    margin-top: 5%;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 1px solid white;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    color: white;
+    font-size: 1.0rem;
+    background-color: $mirage-blue;
+    @include fontHead;
+    &:hover {
+        background-color: $link-water-white;
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.up-images>img,
+.down-images>img {
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+// EASY TO IMPLEMENT 
+.easy-to-implement {
+    background-color: $background-color;
+    height: 70vh;
+}
+
+.circle-part-ui-ux {
+    background-image: url(/assets/shared/desktop/bg-pattern-circle.svg);
+    height: 120vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 250%;
+    left: 75%;
+    // background-position: left;
+}
+
+.easy-to-implement-part {
+    @include flexCenter;
+    margin-top: 5%;
+}
+
+.second-section-part-header {
+    color: $san-juan-blue;
+    @include fontHead;
+}
+
+.second-section-part-para {
+    color: $light-san-juan-blue;
+    margin-top: 5%;
+    line-height: 20px;
+    @include fontParagraph;
+}
+
+.ui-ux {
+    background-color: $background-color;
+    height: 100vh;
+}
+
+.ui-ux-section-second {
+    margin-right: -5%;
+    z-index: 1;
+}
+
+.ui-ux-header {
+    color: $san-juan-blue;
+    @include fontHead;
+}
+
+.ui-ux-part {
+    @include flexCenter;
+    margin-top: 5%;
+}
+
+.ui-ux-para {
+    color: $light-san-juan-blue;
+    margin-top: 5%;
+    line-height: 20px;
+    @include fontParagraph;
+}
+
+// FIN BAN PAY
+.fin-ban-pay {
+    background-color: $background-color;
+    height: 100vh;
+}
+
+.fin-ban-pay-part {
+    margin-top: 20%;
+    @include flexCenter;
+}
+
+.fin-ban-pay-header {
+    text-align: center;
+    margin-top: 5%;
+    color: $san-juan-blue;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    @include fontHead;
+}
+
+.fin-ban-pay-para {
+    text-align: center;
+    margin-top: 5%;
+    line-height: 20px;
+    color: $light-san-juan-blue;
+    @include fontParagraph;
+}
+
+.fin-ban-pay-pic {
+    margin-left: 36%;
+}
+
+// READY TO START
+.ready-to-start {
+    background-color: $background-color;
+    height: 30vh;
+}
+
+.ready-to-start-part {
+    @include flexCenter;
+}
+
+.ready-to-start-header {
+    color: $san-juan-blue;
+    font-size: 3.5rem;
+}
+
+.shedule-demo-btn_ready-to-start {
+    background-color: $dark-pink;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: -10%;
+    &:hover {
+        background-color: $charm-pink-active;
+    }
+}
+
+// FOOTER 
+footer {
+    background-color: $mirage-blue;
+    height: 30vh;
+}
+
+.footer-details {
+    @include flexCenter;
+    margin-top: 5%;
+}
+
+.footer-nav {
+    margin-left: -30%;
+}
+
+.foot-nav {
+    @include flexCenter;
+    list-style: none;
+    font-family: 'Public Sans', sans-serif;
+    margin-left: -20%;
+    li a {
+        padding: 10px;
+        font-weight: 600;
+        line-height: 14.1px;
+        font-size: 1.0rem;
+        list-style: none;
+        text-decoration: none;
+        color: $link-water-white;
+        @include fontHead;
+        &:hover {
+            color: $link-water-white;
+            font-weight: bolder;
+        }
+    }
+}
+
+.footer-icons>img {
+    margin-left: 20px;
+    cursor: pointer;
+}

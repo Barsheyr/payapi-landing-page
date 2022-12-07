@@ -1,0 +1,44 @@
+@import 'home';
+@import 'pricing';
+@import 'about';
+@import 'contact';
+@import 'config';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    margin-left: 20%;
+}
+
+.menu-nav {
+    @include flexCenter;
+    list-style: none;
+    font-family: 'Public Sans', sans-serif;
+    li a {
+        padding: 10px;
+        font-weight: 600;
+        line-height: 14.1px;
+        font-size: 1.0rem;
+        text-decoration: none;
+        color: $san-juan-blue;
+        @include fontHead;
+        &:hover {
+            color: $mirage-blue;
+            font-weight: bolder;
+        }
+    }
+}
